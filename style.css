@@ -1,8 +1,7 @@
 table, tr, th, td {
     border-collapse: collapse;
-    min-width: 40px;
 }
 table {
     width: 80%;
-    margin: 0 auto;
+    margin: 100px auto;
 }
