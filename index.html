@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="container">
-      <article class="feedback_item">
-        <div class="item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ab expedita nulla! Ipsam, accusantium. Dolore incidunt tenetur, quae, expedita quo nostrum quisquam odio praesentium officia reiciendis vitae quod quam et!</div>
-        <div class="item_info">
-          <h3 class="info_name">Brent Lassi</h3>
-          <p class="info_position">Chief Inforamtion Security Officer </p>
-          <p class="info_company">Bluecore</p>
+    <form>
+      <fieldset>
+        <legend>
+          account login
+        </legend>
+        <label for="username">username</label>
+        <input type="text" id="username">
+        <label for="">password</label>
+        <input type="password" id="password">
+        <div>
+          <div>  
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Remember Me</label>
+          </div>  
+          <a href="http://">Forgot Password?</a>
         </div>
-      </article>
-      <article class="feedback_item">
-        <div class="item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ab expedita nulla! Ipsam, accusantium. Dolore incidunt tenetur, ntium</div>
-        <div class="item_info">
-          <h3 class="info_name">Brandon Maxwell</h3>
-          <p class="info_position">Senior Security Engineer</p>
-          <p class="info_company">auth0</p>
-        </div>
-      </article>
-    </section>
+        <button>log in</button>
+      </fieldset>
+    </form>
   </body>
 </html>

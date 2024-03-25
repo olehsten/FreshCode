@@ -1,74 +1,66 @@
 :root {
-  --color-green: #41bc8d;
-  --color-pink: #f294b8;
+  --color-blue: #4286f5;
+  --color-grey: #7a7a7a;
 }
-* {
-  margin: 0;
+body {
+  height: 100vh;
+}
+form {
+  max-width: 500px;
+  margin: 100px auto 0;
+}
+form legend {
   padding: 0;
-  box-sizing: border-box;
-  background-color: rgb(253, 240, 221);
 }
-.container {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 100px;
-}
-.feedback_item {
-  flex-basis: 250px;
+form fieldset {
+  border: 0;
   display: flex;
   flex-direction: column;
+}
+div {
+  display: flex;
   justify-content: space-between;
-  padding: 70px 20px 20px;
-  border-radius: 10px;
-  position: relative;
 }
-.item_text::before {
-  content: '"';
-  position: absolute;
-  top: 20px;
-  padding: 5px 5px 10px;
-  border-radius: 50%;
-  background-color: var(--color-green);
-  height: 15px;
-  width: 15px;
-  text-align: center;
-  color: white;
-  font-size: 30px;
-
+input[type="checkbox"] {
+  margin-left: 0;
 }
-article:last-child .item_text::before {
-  background-color: var(--color-pink)
-}
-article:last-child .info_name {
-  color: var(--color-pink);
-}
-.item_info {
-  text-align: right;
-}
-.feedback_item, .feedback_item * {
-  background-color: rgb(255, 255, 255);
-}
-.item_info {
-  margin-top: 20px;
-}
-.info_name {
-  color: var(--color-green);
-  font-size: 18px;
-}
-.info_position {
-  font-size: 14px;
-}
-.info_company {
-  font-size: 22px;
+legend {
+  text-transform: uppercase;
+  color: var(--color-blue);
+  font-size: 24px;
   font-weight: bold;
-  margin-top: 10px;
 }
-article:last-child .info_company::before {
-  content: "★";
+fieldset > label[for]{
+  margin: 20px 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-grey)
+}
+fieldset > input{
+  height: 40px;
+  background-color: #e5e5e5;
+  border: 0;
+  border-radius: 5px;
+}
+fieldset > div {
+  margin: 20px 0px;
+}
+fieldset > div > div {
+  gap: 10px;
+}
+fieldset > div > div label {
+  color: var(--color-grey);
+}
+fieldset a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+button {
+  background-color:var(--color-blue);
+  border: 0;
   color: white;
-  font-size: 12px;
-  background-color: black;
-  padding: 3px;
-  border-radius: 52% 48% 50% 50% / 6% 6% 94% 94%;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
 }
