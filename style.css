@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(media.css);
+:root {
+    --color-bglight: #F5EFEB;
+    --color-greenlight: #CDDAB2;
+    --color-greenmid: #B3B476;
+    --color-greendark: #31533B;
+    --color-orangedark: #CE4115;
+    --textcolor-black: #0E2715;
+    --textcolor-lightgreen: #CDDAB2;
+    --textcolor-white: #F5F9ED;
+    --arrowcolor-lightorange: #E9A37C;
+    --fs-s: 30px;
+    --lh-s: 30px;
+    --fs-m: 50px;
+    --lh-m: 50px;
+    --fs-l: 96px;
+    --lh-l: 96px
+}
+@font-face {
+    font-family: OhnoBlazeface;
+    src: url(fontfamily/OhnoBlazeface-16Point.woff2) format(woff2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    font-family: poppins;
+    font-weight: 300;
+    text-decoration: none;
+    list-style-type: none;
+}
+.ohnoblazeface {
+    font-family: OhnoBlazeface;
+}
+.container {
+    max-width: 980px;
+    padding: 0 20px;
+    margin: 0 auto;
+}

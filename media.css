@@ -1,0 +1,130 @@
+@media screen and (max-width: 870px) {
+  .links-items {
+    flex-direction: column;
+  }
+  .links-item {
+    width: 100%;
+  }
+  * {
+    font-size: 16px;
+  }
+  .about-author p {
+    height: 214px;
+  }
+  .about-author-photo img {
+    width: 200px;
+    bottom: 250px;
+    right: 50px;
+  }
+  .about-author-cite {
+    flex: 1 0 90%;
+  }
+  .content-services,
+  .lists-links,
+  .about-author,
+  .famous-cites {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .clients {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .menu {
+    position: relative;
+  }
+  .menu img {
+    position: relative;
+    z-index: 2;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu img:hover + ul {
+    position: absolute;
+    display: block;
+    top: -53px;
+    left: -335px;
+    height: 100vh;
+    width: 375px;
+    background-color: var(--color-bglight);
+    margin-top: 10px;
+    padding-top: 25px;
+  }
+  .menu ul li {
+    margin-top: 10px;
+  }
+  .menu img {
+    display: block;
+  }
+  .author-info h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .author-info p, .author-info p span {
+    font-size: 18px;
+  }
+  .info-social {
+    gap: 5px;
+  }
+  .about-author-photo img {
+  }
+  .about-author-cite h1 {
+  }
+}
+@media screen and (max-width: 500px) {
+  .author-info h1 {
+    font-size: var(--fs-m);
+    line-height: var(--lh-m);
+  }
+  .content-services h1,
+  .links-container h1,
+  .clients h1,
+  .about-author-cite h1 {
+    font-size: var(--fs-s);
+    line-height: var(--lh-s);
+  }
+  .author-info p {
+    font-size: 14px;
+  }
+  .author-info p span {
+    font-size: 14px;
+  }
+  .info-social {
+    margin-top: 15px;
+  }
+  .info-social i {
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+  }
+  .content-services h1 {
+    font-size: 40px;
+  }
+  .services-item h3 {
+    font-size: 30px;
+  }
+  .services-item {
+    padding: 20px 10px;
+  }
+  .services-item {
+    flex: 1 0 100%;
+  }
+  .about-author-photo img {
+    width: 120px;
+    bottom: 270px;
+    right: 30px;
+  }
+  .list {
+    width: 70px;
+  }
+  .list img {
+    width: 100%;
+    height: auto;
+  }
+  .clients {
+    padding-bottom: 100px;
+  }
+}

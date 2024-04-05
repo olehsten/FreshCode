@@ -1,0 +1,25 @@
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-container span {
+    font-size: 32px;
+}
+.footer-container .info-social {
+    margin-top: 0;
+    align-self: center;
+}
+.footer-container .info-social i {
+    color: white;
+}
+.footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #31533B;
+
+}
