@@ -1,20 +1,26 @@
-// 1) Створіть змінні для кількості книг у вашій бібліотеці та кількості прочитаних книг. Потім обчисліть відсоток прочитаних книг від загальної кількості книг.
-// 2) Створіть змінну для суми грошей у вашому кошельку в гривнях. Потім обчисліть, скільки це буде в євро, якщо курс обміну 1 євро = 42,09 гривень.
-// 3) Створіть змінні для цін на страви та напої у ресторані (м'ясо, салат, напій). Обчисліть загальну суму замовлення з урахуванням чайових (15% від суми). 
+// 1) Якщо значення змінної number позитивне або 0 - виводимо ''positive", інакше - "negative"
+ 
+// 2) Є дві змінні - num1 і num2. Якщо num1>num2 - вивести результат віднімання (num1-num2), інакше - вивести результат множення (num1*num2)
+ 
+// 3) Якщо значення змінної кратно(тобто ділиться без остачі) на 7 і одночасно кратно 3 - виводимо "you win!", інакше - "you loose"
+let number = 0;
+if(number =>0){
+    console.log("positive")
+} else {
+    console.log("negative")
+}
 
-const amountOfBook = 10;
-const amountOfReadBook = 4;
-const percentOfReadBook = amountOfReadBook/amountOfBook*100+"%";
-console.log(percentOfReadBook)
+const num1 = 6;
+const num2 = 5;
+if(num1>num2){
+    console.log(num1 - num2)
+} else {
+    console.log(num1*num2)
+}
 
-const amountOfMoneyInPocket = 4595;
-const exchangeRateToEuro = 42.09;
-const amountOfMoneyInEuro = amountOfMoneyInPocket/exchangeRateToEuro;
-console.log(amountOfMoneyInEuro);
-
-const priceOfDrink = 25;
-const priceOfMeat = 432;
-const priceOfSalad = 232;
-const amountOfTips = 1.15;
-const bill = (priceOfDrink + priceOfMeat + priceOfSalad) * amountOfTips;
-console.log(bill)
+const specialNum = 20;
+if(specialNum%7===0 && specialNum%3===0){
+    console.log('you win')
+} else {
+    console.log('you loose')
+}
