@@ -1,21 +1,24 @@
-function familyCounter() {
-    let countMembers = prompt("ВВедіть будь ласка кількість осіб в родині числом, наприклад 3");
-    const listOfFamily = {}
-    if(!isNaN(countMembers) && countMembers > 0) {
-        for (let i = 0; i < countMembers; i++) {
-            let famMember = prompt("Введіть статус особи в родина, наприклад father");
-            listOfFamily[famMember];
-            const amountOfNamePerMember = 1;
-            for(let i = 0; i < amountOfNamePerMember; i++){
-                let famMemberName = prompt("Введіть ім‘я особи в родині, наприклад Ігор");
-                listOfFamily[famMember] = famMemberName;
-            }
+let numFromUser = prompt("ВВеди тайємне число")
+let countOfTry = 0;
+const secretNum = 7;
+function guessSecretNum(num){
+    countOfTry++;
+    if(!isNaN(num)){
+        if(num > secretNum){
+            console.log("Таємне число менше")
+            let numFromUser = prompt("ВВеди new тайємне число")
+            guessSecretNum(numFromUser)
+        } else if (num < secretNum){
+            console.log("Таємне число більше")
+            let numFromUser = prompt("ВВеди new тайємне число")
+            guessSecretNum(numFromUser)
+        } else {
+            console.log(`Ви вгадали таємне число, кількість спроб ${countOfTry}`)
         }
-        return listOfFamily;
     } else {
-        alert("Ввели неправильне число, введіть коректне");
-        return familyCounter();
+        console.log("введіть число")
+        let numFromUser = prompt("ВВеди new тайємне число")
+        guessSecretNum(numFromUser)
     }
 }
-let result = familyCounter();
-console.log(result)
+guessSecretNum(numFromUser);
