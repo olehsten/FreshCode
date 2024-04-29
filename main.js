@@ -1,4 +1,4 @@
-let numFromUser = prompt("ВВеди тайємне число")
+// let numFromUser = prompt("ВВеди тайємне число")
 let countOfTry = 0;
 const secretNum = 7;
 function guessSecretNum(num){
@@ -21,4 +21,11 @@ function guessSecretNum(num){
         guessSecretNum(numFromUser)
     }
 }
-guessSecretNum(numFromUser);
+// guessSecretNum(numFromUser);
+
+const myNumber = 100;
+for(let i = myNumber; i > 0; i--){
+    if(i%9===0){
+        console.log(`Число ${i}`)
+    }
+}
